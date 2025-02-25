@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #023634, #a24b4b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  background: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+/* Form Styles */
+.form-container {
+  position: relative;
+}
+
+.form {
+  
+  
+  flex-direction: column;
+  gap: 15px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Adjust form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns items to the left */
+  gap: 15px;
+}
+
+/* Align input fields and labels to the left */
+#username, #password {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+
+
+  border: 1px solid #8d4e4e;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: left; /* Ensures text is aligned left */
+}
+#password {
+  margin-top: 10px;
+}
+
+/* Ensure labels are also aligned left */
+label {
+  align-self: flex-start;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Adjust button alignment */
+.loginbutton {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.loginbutton:hover {
+  background: #037425;
+}
+#signup{
+  text-align: center;
+
+}
+
+/* Toggle between Login and Signup */
+.toggle {
+  font-size: 14px;
+  color: #555;
+}
+
+.toggle span {
+  color: #667eea;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toggle span:hover {
+  text-decoration: underline;
+}
+
+/* Hide Signup Form Initially */
+.hidden {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+  }
+}

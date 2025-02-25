@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #dddddd;
+    text-align: center;
+}
+.back{
+    
+    width: 40px;
+    height: auto;
+    margin-left: 30px;
+    cursor: pointer;
+
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background: #06086d;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.404);
+    padding: 15px 20px;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+
+h2 {
+    color: #333;
+}
+
+/* .table-container {body {
+    
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+} */
+
+h2 {
+    color: #333;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+    
+}
+
+.filter-container label {
+    font-weight: bold;
+    margin-right: 5px;
+    
+}
+
+.filter-container input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #e00000;
+    border-radius: 5px;
+}
+
+.filter-container button {
+    background-color: #ce0909;
+    color: white;
+    
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter-container button:hover {
+    background-color: #45a049;
+}
+
+.table-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.export-buttons {
+    margin-top: 15px;
+}
+
+.export-buttons button {
+    background-color: #c52b20;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.export-buttons button:hover {
+    background-color: #005f7f;
+}
+
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.export-btn {
+    margin-top: 15px;
+    background-color: #ba0000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.export-btn:hover {
+    background-color: #32b826;
+}
+#reset-button{
+    background-color: #0d5483;
+}

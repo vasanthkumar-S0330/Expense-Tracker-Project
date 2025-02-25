@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Report</title>
+    <link rel="stylesheet" href="report.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <img class="back" src="Vector (1).png" alt="Back" onclick="goBack()">
+    </nav>
+
+    <h2>Generate Report</h2>
+
+    <!-- <div class="filter-container">
+        <label for="from-date">From:</label>
+        <input type="date" id="from-date">
+        
+        <label for="to-date">To:</label>
+        <input type="date" id="to-date">
+        
+        <button id="generate-report">Filter Report</button>
+        <button id="reset-dates">Reset</button>
+        <!-- <button id="delete">Delete</button> -->
+    </div> 
+
+    <div class="table-container">
+        <table id="report-table">
+            <thead>
+                <tr>
+                    <th>Select</th> <!-- Checkbox Column -->
+                    <th>Date</th>
+                    <th>Item Name</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="report-table-body">
+                <!-- Data will be dynamically inserted here -->
+            </tbody>
+        </table>
+
+        <div class="export-buttons">
+            <button id="delete all">Delete all</button>
+            <button id="delete">Delete</button>
+            <button id="reset-button">Reset</button>
+
+        </div>
+    </div>
+
+    <script src="delete.js"></script>
+</body>
+</html>

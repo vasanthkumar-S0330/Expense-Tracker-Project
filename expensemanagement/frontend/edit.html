@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img id="profileImage" src="Figma.png" alt="Profile Picture">
+            
+            <h4 id="username">@username</h4>
+            <input type="file" id="profileUpload" accept="image/*">
+            <button onclick="uploadImage()">Upload Image</button>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+        <div class="content">
+            <h2>Edit Profile</h2>
+            <form id="editProfileForm">
+                <div class="Edit-profile">
+                <div class="Edit-profile-item">
+                <label>Name:</label>
+                <input type="text" id="nameInput" required/><br>
+                </div>
+                <div class="Edit-profile-item">
+                <label>Username:</label>
+                <input type="text" id="usernameInput" required>
+                </div>
+                <button class="Edit-profile-button" type="submit">Save Changes</button>
+            </div>
+            </form>
+
+            <h2>Change Password</h2>
+            <form id="changePasswordForm">
+                <div class="Edit-profile">
+                    <div class="Edit-profile-item">
+                <label>Old Password:</label>
+                <input type="password" id="oldPassword" required>
+            </div>
+            <div class="Edit-profile-item">
+
+                <label>New Password:</label>
+                <input type="password" id="newPassword" required>
+            </div>
+
+                <button class="Edit-profile-button" type="submit">Change Password</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="edit.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
